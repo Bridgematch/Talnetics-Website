@@ -8,13 +8,13 @@ import Link from 'next/link';
 const EventTimeline = () => {
   
   return (
-    <section className="py-12 ">
+    <section className="py-12 text-base-content">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-4xl font-extrabold  mb-4">
             Submit Your <span className="text-[#E55607]">Content</span> for Event Competitions
           </h2>
-          <p className="text-lg text-gray-700 mb-6">
+          <p className="text-lg  mb-6">
             Showcase your creative ability and achievement story by participating in event competitions. Follow the journey map to understand the event competition management process.
           </p>
         </div>

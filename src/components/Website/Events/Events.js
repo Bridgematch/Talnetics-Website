@@ -34,7 +34,7 @@ const events = [
   
 const Events = () => {
   return (
-    <section id="events"  className="py-16 bg-gradient-to-r from-orange-500 from-0% via-gray-800 via-50% to-emerald-500 to-100%">
+    <section id="events"  className="py-16 bg-gradient-to-r from-orange-500 from-0% via-gray-800 via-50% to-emerald-500 to-100% text-base-content">
     <div className="container-fluid mx-auto px-6 text-center">
       <h2 className="text-4xl font-bold mb-8 text-white">More with Events</h2>
       <div className="mb-12 mt-3">
@@ -55,7 +55,7 @@ const Events = () => {
               {event.icon}
             </div>
             <h3 className="text-2xl font-bold mb-4">{event.title}</h3>
-            <p className="text-gray-600 mb-4">{event.description}</p>
+            <p className=" mb-4">{event.description}</p>
             <Image
               src={event.image}
               alt={event.title}

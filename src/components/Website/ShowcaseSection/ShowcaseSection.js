@@ -17,21 +17,21 @@ const ShowcaseSection = () => {
           <div className="flex flex-col items-center">
             <FaBullhorn className="text-6xl text-[#E55607] mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">Gain Exposure</h3>
-            <p className="text-center text-gray-600">
+            <p className="text-center ">
               Reach a wider audience and showcase your skills to potential sponsors and fans.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <FaStar className="text-6xl text-[#E55607] mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">Shine Bright</h3>
-            <p className="text-center text-gray-600">
+            <p className="text-center ">
               Stand out from the crowd with a unique profile that highlights your best work.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <FaUsers className="text-6xl text-[#E55607] mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">Connect & Collaborate</h3>
-            <p className="text-center text-gray-600">
+            <p className="text-center ">
               Network with industry leaders and other talented individuals to grow your career.
             </p>
           </div>

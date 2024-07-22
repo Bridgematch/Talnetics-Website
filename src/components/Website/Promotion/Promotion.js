@@ -48,7 +48,7 @@ const Promotion = () => {
           </div>
         </div>
 
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-lg  mb-8">
           We are dedicated to showcasing your talent on multiple platforms, ensuring maximum visibility and opportunities for sponsorships and collaborations.
         </p>
 

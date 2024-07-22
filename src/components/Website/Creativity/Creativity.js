@@ -11,7 +11,7 @@ const Creativity = () => {
         <h2 className="text-4xl font-bold text-center  mb-8">
           Unleash Your <span className="text-[#E55607]">Creativity</span> and Style
         </h2>
-        <p className="text-center text-xl text-gray-700 mb-8">
+        <p className="text-center text-xl  mb-8">
           Express your unique style and creativity on Talnetics. Connect with like-minded individuals and get inspired.
         </p>
 <div className="flex flex-col md:flex-row justify-center items-center gap-5">
@@ -20,22 +20,22 @@ const Creativity = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="flex flex-col items-center">
             <FaPaintBrush className="text-6xl text-[#E55607] mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center">Express Yourself</h3>
-            <p className="text-center text-gray-600">
+            <h3 className="text-2xl font-semibold  mb-2 text-center">Express Yourself</h3>
+            <p className="text-center ">
               Use Talnetics to showcase your unique talents and creative projects to the world.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <FaPalette className="text-6xl text-[#E55607] mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center">Find Inspiration</h3>
-            <p className="text-center text-gray-600">
+            <h3 className="text-2xl font-semibold  mb-2 text-center">Find Inspiration</h3>
+            <p className="text-center ">
               Connect with other artists and discover new sources of inspiration to fuel your creativity.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <FaRocket className="text-6xl text-[#E55607] mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center">Launch Your Ideas</h3>
-            <p className="text-center text-gray-600">
+            <h3 className="text-2xl font-semibold  mb-2 text-center">Launch Your Ideas</h3>
+            <p className="text-center ">
               Turn your creative ideas into reality with the support of our vibrant community.
             </p>
           </div>
