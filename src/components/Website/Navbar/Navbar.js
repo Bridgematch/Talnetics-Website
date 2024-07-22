@@ -38,8 +38,9 @@ const Navbar = () => {
 
       setIsLoading(false)
     } catch (error) {
-      throw new Error(error)
       setIsLoading(false)
+      throw new Error(error)
+      
     }
   }
 
