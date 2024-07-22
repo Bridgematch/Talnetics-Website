@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 const Creativity = () => {
   return (
-    <section className=" py-12">
+    <section className=" py-12 text-base-content">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="text-4xl font-bold text-center  mb-8">
           Unleash Your <span className="text-[#E55607]">Creativity</span> and Style
         </h2>
         <p className="text-center text-xl text-gray-700 mb-8">

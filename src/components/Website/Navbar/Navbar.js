@@ -77,11 +77,11 @@ const Navbar = () => {
  
 <div className={`${styles.toTop} navbar sticky bg-black bg-opacity-1 ` }>
   <div className="navbar-start ">
-    <div className="dropdown bg-gray-800">
+    <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52  bg-gray-800">
       <li><Link passHref href="/" className={`text-white hover:bg-orange-500 ${router.pathname == '/' ? 'bg-orange-600':'bg-transparent'}`} >Home</Link></li>
         <li><Link passHref href="/showcase" className={`text-white hover:bg-orange-500 ${router.pathname =="/showcase" ? 'bg-orange-600':'bg-transparent'}`} >Showcase</Link></li>
         <li><Link passHref href="/discover" className={`text-white hover:bg-orange-500 ${router.pathname =="/discover" ? 'bg-orange-600':'bg-transparent'}`} >Discover</Link></li>
@@ -105,7 +105,7 @@ const Navbar = () => {
     </ul>
   </div>
   {/* You can open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn" onClick={()=>document.getElementById('my_modal_4').showModal()}>Reserve a Spot</button>
+<button className="btn ml-4" onClick={()=>document.getElementById('my_modal_4').showModal()}>Reserve a Spot</button>
 <dialog id="my_modal_4" className="modal">
   <div className="modal-box w-[75%] md:w-[50%]  max-w-2xl">
     <h3 className="font-bold text-lg">Interested? Join our waitlist</h3>

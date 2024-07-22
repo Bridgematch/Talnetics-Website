@@ -16,9 +16,9 @@ const talentCategories = [
 
 const TalentCategories = () => {
   return (
-    <section className="py-12  pb-12">
+    <section className="py-12  pb-12 text-base-content ">
       <div className="container-fluid mx-auto px-4 text-center">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
+        <h2 className="text-4xl font-extrabold  mb-8">
           Discover Talented <span className="text-[#E55607]">Individuals</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">

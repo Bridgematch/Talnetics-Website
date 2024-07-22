@@ -6,12 +6,12 @@ import { FaYoutube, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaTiktok } f
 
 const Promotion = () => {
   return (
-    <section className="py-12 ">
+    <section className="py-12 text-base-content ">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+        <h2 className="text-4xl font-extrabold  mb-4">
           Promote Your Talent with <span className="text-[#E55607]">Talnetics</span>
         </h2>
-        <p className="text-xl text-gray-700 mb-8">
+        <p className="text-xl  mb-8">
           Amplify your reach through social media, TV, radio stations, and our exclusive Talnetics show. Get the visibility you deserve!
         </p>
 

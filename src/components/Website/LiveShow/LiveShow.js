@@ -12,13 +12,13 @@ const liveShowImages = [
 
 const LiveShow = () => {
   return (
-    <section className="py-12 ">
+    <section className="py-12 text-base-content">
       <div className="container-fluid mx-auto px-4 flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 w-[100%] md:ml-16    ">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-4xl font-extrabold  mb-4">
             <span className="text-[#E55607]">Talnetics</span> Live Show
           </h2>
-          <p className="text-lg text-gray-700 mb-6 md:pr-20">
+          <p className="text-lg  mb-6 md:pr-20">
             Talnetics hosts a live show where we feature various talents from different categories in the entertainment and art space. In our studio, we conduct interview sessions with talents to promote them and help them gain visibility.
           </p>
           <div className="flex space-x-4">

@@ -9,10 +9,10 @@ const GetDiscovered = () => {
     {/* bg-gradient-to-r from-gray-100 via-white to-gray-800 */}
       <div className="container-fluid mx-auto  text-center flex flex-col md:flex-row item-center justify-between  ">
        <div className="w-[100%] md:w-[50%] px-4 md:px-8 pt-12">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-4 items-center">
+        <h2 className="text-4xl font-extrabold  mb-4 items-center">
           Get Discovered with <span className="text-[#E55607]">Talnetics</span>
         </h2>
-        <p className="text-xl text-gray-700 mb-8">
+        <p className="text-xl  mb-8">
           Talnetics gives you the platform to connect and get discovered by partners, companies, brands, and other talents.
         </p>
         <div className="flex justify-center  mb-8 gap-5">

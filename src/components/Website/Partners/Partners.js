@@ -33,7 +33,7 @@ const partners = [
 const Partners = () => {
   return (
     <section id="partners" className="  bg-gray-100 w-screen relative">
-    <div className="container-fluid  mx-auto px-10  pt-16 pb-8 text-center md:w-[100%] bg-green-100 flex flex-col items-center ">
+    <div className="container-fluid  mx-auto px-10  pt-16 pb-8 text-center md:w-[100%]  flex flex-col items-center ">
       <h2 className="text-3xl font-bold mb-6  ">Partners We Work With</h2>
       <a href="/signup" className="btn bg-orange-600 text-white hover:text-black mb-6">Become a Partner</a>
       

@@ -7,11 +7,11 @@ const CallForAudition  = () => {
   return (
     <section className="py-12 m-0 p-0  mb-8  ">
       <div className="container-fluid  mx-auto text-center flex flex-col justify-center item-center ">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-4 ">
+        <h2 className="text-4xl font-extrabold  mb-4 ">
           <span className="bg-[#E55607] text-white px-2">Call for Audition</span> <br />
           <p className="mt-4"><span className="text-[#E55607] ">Expression of Interest</span></p>
         </h2>
-        <p className="text-xl text-gray-700 mb-8 w-[75%] md:w-[50%] mx-auto">
+        <p className="text-xl  mb-8 w-[75%] md:w-[50%] mx-auto">
           Directors, producers, and project managers can create a call for audition. Talents can express their interest to collaborate and join exciting projects.
         </p>
 
@@ -32,10 +32,10 @@ const CallForAudition  = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center px-8 pr-10">
-          <h3 className="text-2xl font-extrabold text-gray-900 mb-4">
+          <h3 className="text-2xl font-extrabold  mb-4">
           <p className="mt-4"><span className=" ">Share your Interest</span></p>
         </h3>
-            <p className="text-lg text-gray-700 mb-6 w-[80%]">
+            <p className="text-lg  mb-6 w-[80%]">
               Looking for the perfect cast or crew for your project? Create a call for audition and find the best talents suited for your needs. Give opportunities to rising stars and bring your vision to life.
             </p>
             <div className="flex justify-center space-x-4">

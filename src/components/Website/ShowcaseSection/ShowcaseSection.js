@@ -4,12 +4,12 @@ import { FaBullhorn, FaStar, FaUsers } from 'react-icons/fa';
 
 const ShowcaseSection = () => {
   return (
-    <section className=" py-12 text-center">
+    <section className=" py-12 text-center text-base-content">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="text-4xl font-bold text-center  mb-8">
           Showcase Your Talents on <span className="text-[#E55607]">Talnetics</span>
         </h2>
-        <p className="text-center text-xl text-gray-700 mb-8">
+        <p className="text-center text-xl  mb-8">
           Elevate your visibility, get sponsorships, and connect with top industry professionals.
         </p>
 
