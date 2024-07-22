@@ -45,7 +45,7 @@ const features = [
 
 const Features = () => {
   return (
-     <section id="features"  className=" py-16 bg-base-200">
+     <section id="features"  className=" py-16 bg-base-200 text-base-content">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-12">Core Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:w-[70%] xl:mx-auto gap-8">
@@ -58,11 +58,11 @@ const Features = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           > 
-              <div className="text-6xl mb-4">
+              <div className="text-6xl mb-4 mx-auto text-center">
                 {feature.icon}
               </div>
               <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="">{feature.description}</p>
               </motion.div>
           ))}
         </div>

@@ -11,7 +11,7 @@ import styles from './solutions.module.css'
 
 const Solutions = () => {
   return (
-    <section id="solutions" className="py-16 bg-base-200">
+    <section id="solutions" className="py-16 bg-base-200 text-base-content">
       <div className="container-fluid mx-auto flex flex-col md:flex-row items-center justify-center px-0 space-y-8 md:space-y-0 md:space-x-8">
         <motion.div
           className="w-full md:w-1/2 "
@@ -38,7 +38,7 @@ const Solutions = () => {
             <Image src="/logo.png" alt="logo" width={40} height={40} className="rounded-lg  w-[10%] mb-5 "
           />
           <h2 className="text-4xl font-bold mb-4">Empower Your Talent</h2>
-          <p className="text-gray-600 mb-6 lg:w-[65%] md:w-[65%]">
+          <p className=" mb-6 lg:w-[65%] md:w-[65%]">
             With Talnetics, talented users can upload and share their content which goes through our AI-powered promotion pipeline to improve visibility and promotion.
           </p>
           <Link href="/signup" className="btn bg-orange-600 px-12  text-white hover:text-black">Try It Out</Link>

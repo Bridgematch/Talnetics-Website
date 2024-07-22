@@ -64,7 +64,7 @@ const stories = [
 
 const Stories = () => {
   return (
-    <section id="stories" className="py-16 bg-base-200">
+    <section id="stories" className="py-16 bg-base-200 text-base-content">
       <div className="container-fluid mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-12">Talent Stories</h2>
         <Swiper
@@ -91,8 +91,8 @@ const Stories = () => {
                 <div className="mx-auto text-center w-1/2">
                 <Image src={story.image} width={250} height={250} alt="" className="w-[160px] h-[220px] xs:w-[500px]  mb-5 mx-auto rounded-lg" />
                 <h3 className="text-2xl font-bold mb-2"> {story.name} </h3>
-                <p className="text-gray-600 mb-2">{story.talents}</p>
-                <p className="text-gray-600 mb-4">{story.location}</p>
+                <p className=" mb-2">{story.talents}</p>
+                <p className=" mb-4">{story.location}</p>
                 <div className="flex md:flex-row flex-col gap-2  justify-center text-center">
                   <Link href="/signup" className="btn btn-sm px-4  btn-primary">Support</Link>
                   <Link href="/signup" className="btn btn-sm px-6  btn-secondary">Hire</Link>

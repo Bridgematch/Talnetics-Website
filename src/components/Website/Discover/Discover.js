@@ -10,7 +10,7 @@ import styles from './discover.module.css'
 
 const Discover = () => {
   return (
-    <section id="discover"  className="py-16 bg-white-200">
+    <section id="discover"  className="py-16 text-base-content">
     <div className="container-fluid mx-auto flex flex-col md:flex-row items-center justify-center pl-[10%] pr-[2%] px-0 space-y-8 md:space-y-0 md:space-x-4">
     <motion.div
         className="w-full md:w-1/2 text-center md:text-left  px-8"
@@ -21,8 +21,8 @@ const Discover = () => {
       >
           <Image src="/logo.png" alt="logo" width={40} height={40} className="rounded-lg  w-[10%] mb-5 "
         />
-        <h2 className="text-4xl font-bold mb-4">Discover Talents Smartly</h2>
-        <p className="text-gray-600 mb-6 lg:w-[75%] md:w-[70%]">
+        <h2 className="text-4xl font-bold mb-4">Discover Talents <span className='bg-orange-600'>Smartly</span></h2>
+        <p className=" mb-6 lg:w-[75%] md:w-[70%]">
           With Talnetics, partners which includes record labels, event managers, producers, directors and recruitment agencies discover specific talents timely from pool of talents via our Recommendation system.
         </p>
         <Link href="/signup" className="btn bg-orange-600 px-12 text-white hover:text-black">Check out our talents</Link>
