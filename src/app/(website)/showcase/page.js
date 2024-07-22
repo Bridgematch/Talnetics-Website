@@ -13,18 +13,18 @@ import LiveShow from '@/components/Website/LiveShow/LiveShow'
 
 
 // export const metadata = {
-//   title: 'Explore BridgeMatch Showcases | BridgeMatch',
-//   description: 'Discover diverse showcases and events on BridgeMatch. Join a community of artists, creators, and performers showcasing their talents globally.',
+//   title: 'Explore Talnetics Showcases | Talnetics',
+//   description: 'Discover diverse showcases and events on Talnetics. Join a community of artists, creators, and performers showcasing their talents globally.',
 // }
 
 // export const metadata = {
-//   title: 'Discover Talents and Artists | BridgeMatch',
-//   description: 'Explore talented artists, musicians, and performers on BridgeMatch. Connect with local and global talents, discover new music, and join the creative community.',
+//   title: 'Discover Talents and Artists | Talnetics',
+//   description: 'Explore talented artists, musicians, and performers on Talnetics. Connect with local and global talents, discover new music, and join the creative community.',
 // }
 
 export const metadata = {
-  title: 'Showcase Talents and Get Sponsored | BridgeMatch',
-  description: 'Showcase your talents, skills, and creativity on BridgeMatch. Discover sponsorship opportunities, connect with a global audience, and elevate your visibility as an artist or performer.',
+  title: 'Showcase Talents and Get Sponsored | Talnetics',
+  description: 'Showcase your talents, skills, and creativity on Talnetics. Discover sponsorship opportunities, connect with a global audience, and elevate your visibility as an artist or performer.',
 }
 
 const Showcase = () => {

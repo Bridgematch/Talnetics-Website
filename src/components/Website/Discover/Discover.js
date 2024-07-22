@@ -23,7 +23,7 @@ const Discover = () => {
         />
         <h2 className="text-4xl font-bold mb-4">Discover Talents Smartly</h2>
         <p className="text-gray-600 mb-6 lg:w-[75%] md:w-[70%]">
-          With Bridgematch, partners which includes record labels, event managers, producers, directors and recruitment agencies discover specific talents timely from pool of talents via our Recommendation system.
+          With Talnetics, partners which includes record labels, event managers, producers, directors and recruitment agencies discover specific talents timely from pool of talents via our Recommendation system.
         </p>
         <Link href="/signup" className="btn bg-orange-600 px-12 text-white hover:text-black">Check out our talents</Link>
        

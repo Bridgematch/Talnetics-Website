@@ -6,13 +6,13 @@ import { FaYoutube, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaTiktok } f
 
 const Promotion = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 ">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-          Promote Your Talent with <span className="text-[#E55607]">BridgeMatch</span>
+          Promote Your Talent with <span className="text-[#E55607]">Talnetics</span>
         </h2>
         <p className="text-xl text-gray-700 mb-8">
-          Amplify your reach through social media, TV, radio stations, and our exclusive BridgeMatch show. Get the visibility you deserve!
+          Amplify your reach through social media, TV, radio stations, and our exclusive Talnetics show. Get the visibility you deserve!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -34,7 +34,7 @@ const Promotion = () => {
           <div className="relative">
             <Image
               src="/images/promotion-2.jpg" // replace with your image path
-              alt="BridgeMatch show promotion"
+              alt="Talnetics show promotion"
               layout="responsive"
               width={200}
               height={475}
@@ -42,7 +42,7 @@ const Promotion = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
               <h3 className="text-3xl font-bold text-white px-4 py-2">
-                BridgeMatch Show
+                Talnetics Show
               </h3>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Promotion = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h2 className="text-2xl font-bold mb-4">Follow BridgeMatch</h2>
+          <h2 className="text-2xl font-bold mb-4">Follow Talnetics</h2>
           <div className="flex space-x-4">
             <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube size={24} /></Link>
             <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={24} /></Link>

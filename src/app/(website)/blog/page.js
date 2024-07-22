@@ -4,8 +4,8 @@ import styles from './blog.module.css'
 
 
 export const metadata = {
-  title: 'Explore Insights and Tips | BridgeMatch Blog',
-  description: 'Discover insightful articles, tips, and stories on the BridgeMatch Blog. Stay updated with the latest trends, news, and resources for artists, performers, and creatives.',
+  title: 'Explore Insights and Tips | Talnetics Blog',
+  description: 'Discover insightful articles, tips, and stories on the Talnetics Blog. Stay updated with the latest trends, news, and resources for artists, performers, and creatives.',
 }
 
 

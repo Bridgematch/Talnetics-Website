@@ -16,8 +16,8 @@ const Footer = () => {
         
         {/* Brand and Social Media Links */}
         <div className="flex flex-col items-start">
-          <Image src="/logo.png" alt="Bridgematch Logo" width={100} height={50} className="mb-4" />
-          <h2 className="text-2xl font-bold mb-4">Bridgematch</h2>
+          <Image src="/logo.png" alt="Talnetics Logo" width={100} height={50} className="mb-4" />
+          <h2 className="text-2xl font-bold mb-4">Talnetics</h2>
           <div className="flex space-x-4">
             <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube size={24} /></Link>
             <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={24} /></Link>
@@ -67,11 +67,11 @@ const Footer = () => {
         <ul className="flex flex-wrap justify-center space-x-4 mb-4">
           <li><Link href="/terms-and-conditions" className="hover:underline">Terms and Conditions</Link></li>
           <li><Link href="/privacy-statements" className="hover:underline">Privacy Statements</Link></li>
-          <li><Link href="/service-agreements" className="hover:underline">Bridgematch Agreements</Link></li>
+          <li><Link href="/service-agreements" className="hover:underline">Talnetics Agreements</Link></li>
           <li><Link href="/distribution-agreements" className="hover:underline">Digital Distribution Agreement</Link></li>
         </ul>
         <hr className="border-gray-600 mb-4" />
-        <p className="text-center">&copy; 2024 Bridgematch Inc. All rights reserved.</p>
+        <p className="text-center">&copy; 2024 Talnetics Inc. All rights reserved.</p>
       </div>
     </div>
   </footer>

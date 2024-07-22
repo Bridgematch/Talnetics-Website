@@ -8,7 +8,7 @@ import MiniNavBar from "@/components/Website/MiniNavBar/MiniNavBar"
 
 export const WebsiteLayout = ({children}) => {
   return (
-    <div className="flex flex-col justify-between items-start">
+    <div className="flex flex-col justify-between items-start text-base-content">
 
          <Navbar /> 
          <MiniNavBar />   

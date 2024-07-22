@@ -39,7 +39,7 @@ const Solutions = () => {
           />
           <h2 className="text-4xl font-bold mb-4">Empower Your Talent</h2>
           <p className="text-gray-600 mb-6 lg:w-[65%] md:w-[65%]">
-            With Bridgematch, talented users can upload and share their content which goes through our AI-powered promotion pipeline to improve visibility and promotion.
+            With Talnetics, talented users can upload and share their content which goes through our AI-powered promotion pipeline to improve visibility and promotion.
           </p>
           <Link href="/signup" className="btn bg-orange-600 px-12  text-white hover:text-black">Try It Out</Link>
          

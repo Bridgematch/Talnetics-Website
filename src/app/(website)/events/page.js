@@ -8,8 +8,8 @@ import EventCategory from '@/components/Website/EventCategories/EventCategory'
 
 
 export const metadata = {
-  title: 'Discover Events and Music Shows | BridgeMatch',
-  description: 'Explore upcoming events, music shows, and concerts on BridgeMatch. Stay updated with local and global music events, connect with artists, and join the community.',
+  title: 'Discover Events and Music Shows | Talnetics',
+  description: 'Explore upcoming events, music shows, and concerts on Talnetics. Stay updated with local and global music events, connect with artists, and join the community.',
 }
 
 

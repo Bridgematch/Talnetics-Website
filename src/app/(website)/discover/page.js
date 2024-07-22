@@ -14,8 +14,8 @@ import TalentCategories from '@/components/Website/TalentCategories/TalentCatego
 
 
 export const metadata = {
-  title: 'Talent Discovery - Find Musicians and Artists | BridgeMatch',
-  description: 'Discover talented musicians and artists on BridgeMatch. Connect with like-minded individuals, collaborate on projects, and grow your network.',
+  title: 'Talent Discovery - Find Musicians and Artists | Talnetics',
+  description: 'Discover talented musicians and artists on Talnetics. Connect with like-minded individuals, collaborate on projects, and grow your network.',
 }
 
 const Discover = () => {

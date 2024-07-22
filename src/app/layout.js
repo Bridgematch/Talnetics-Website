@@ -6,8 +6,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'BridgeMatch - Empowering Talents, Connecting Creativity',
-  description: 'Discover BridgeMatch, your platform for showcasing talents, connecting with sponsors, and promoting creativity. Join our vibrant community today!',
+  title: 'Talnetics - Empowering Talents, Connecting Creativity',
+  description: 'Discover Talnetics, your platform for showcasing talents, connecting with sponsors, and promoting creativity. Join our vibrant community today!',
 }
 
 export default function RootLayout({ children }) {

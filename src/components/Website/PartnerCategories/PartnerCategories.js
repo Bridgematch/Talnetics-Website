@@ -14,7 +14,7 @@ const partnerCategories = [
 
 const PartnerCategories = () => {
   return (
-    <section className="py-12 bg-slate-50">
+    <section className="py-12 ">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
           Trusted by Leading <span className="text-[#E55607]">Industry Partners</span>

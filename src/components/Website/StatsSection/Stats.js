@@ -8,7 +8,7 @@ const statistics = [
 ];
 const Stats = () => {
   return (
-    <section className="py-16 px-12 bg-gray-100">
+    <section className="py-16 px-12 ">
     <div className="container-fluid mx-auto text-center">
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

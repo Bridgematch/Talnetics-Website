@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 const TalentDiscovery = () => {
   return (
-    <section className="py-12 bg-white ">
+    <section className="py-12  ">
     <div className="container-fluid mx-auto  text-center py-8">
-      <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+      <h2 className="text-4xl font-extrabold text-base-content mb-4">
         Talent Discovery for <span className="text-[#E55607]">Partners</span>
       </h2>
-      <p className="text-xl text-gray-700 mb-12 w-[75%] md:w-[50%] mx-auto">
+      <p className="text-xl  mb-12 w-[75%] md:w-[50%] mx-auto">
         Discover a pool of diverse talents from different backgrounds and countries. Connect with the best talents suited for your needs.
       </p>
 

@@ -14,11 +14,11 @@ const Privacy_Statements = () => {
           Effective Date: [Insert Effective Date]
         </p>
         <p>
-          Please read this Privacy Statement (<b>Statement</b>) carefully before using the bridgematch mobile application or associated website (<b>the Service</b>) operated by bridgematch Inc., and Vinyl Group Operations Pty Ltd wholly owned subsidiaries of Vinyl Group Ltd, an Australian public company (<b>us</b>, <b>we</b>, or <b>our</b>).
+          Please read this Privacy Statement (<b>Statement</b>) carefully before using the Talnetics mobile application or associated website (<b>the Service</b>) operated by Talnetics Inc., and Vinyl Group Operations Pty Ltd wholly owned subsidiaries of Vinyl Group Ltd, an Australian public company (<b>us</b>, <b>we</b>, or <b>our</b>).
         </p>
 
         <p>
-          Your privacy is important to us. This Statement explains how we collect, use, disclose, and safeguard your information when you visit our website [https://bridgematch.me/] (the Site) or use our Service. Please note that this Statement does not apply to third-party websites, services, or applications that may be linked from our Service, which we do not control.
+          Your privacy is important to us. This Statement explains how we collect, use, disclose, and safeguard your information when you visit our website [https://Talnetics.me/] (the Site) or use our Service. Please note that this Statement does not apply to third-party websites, services, or applications that may be linked from our Service, which we do not control.
         </p>
 
         <h2 className="text-2xl font-semibold">Information Collection</h2>
@@ -65,7 +65,7 @@ const Privacy_Statements = () => {
 
         <h2 className="text-2xl font-semibold">Contact Us</h2>
         <p>
-          If you have any questions about this Statement, please contact us at <a href="mailto:support@thebridgematch.com">support@thebridgematch.com</a>.
+          If you have any questions about this Statement, please contact us at <a href="mailto:support@theTalnetics.com">support@theTalnetics.com</a>.
         </p>
       </div>
     </div>
