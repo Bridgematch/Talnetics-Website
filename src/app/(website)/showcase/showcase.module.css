@@ -1,0 +1,9 @@
+.bgcolor{
+    @apply bg-blue-500 p-5 rounded-lg;
+}
+
+.container{
+    width: 650px;
+    height: 90vh;
+}
+

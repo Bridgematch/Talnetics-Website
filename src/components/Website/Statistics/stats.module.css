@@ -1,0 +1,65 @@
+.statsmain{
+    position: relative;
+    width: 80%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    gap: 4;
+    background: white;
+    opacity: 90%;
+    padding-top:.5rem ;
+
+}
+.statbox{
+    width: 33%;
+    height: 120px;
+    padding: 5px;
+}
+
+
+
+
+@media (max-width: 1536px) {
+    .container {
+      width: 1366px;
+    }
+  }
+  
+  @media (max-width: 1366px) {
+    .container {
+      width: 1280px;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .container {
+      width: 1024px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      width: 768px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 640px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .statsmain {
+        display: none;
+      }
+  }
+  @media (max-width: 475px) {
+    .statsmain {
+      display:  none;
+    }
+  }
+  
+
