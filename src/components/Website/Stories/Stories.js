@@ -65,9 +65,13 @@ const stories = [
 
 const Stories = () => {
   return (
-    <section id="stories" className="py-16 bg-base-200 text-base-content">
-      <div className="container-fluid mx-auto px-6 text-center">
+    <section id="stories" className="   w-screen z-0 text-base-content">
+    <div className="container-fluid  mx-auto px-10  pt-16 pb-8 text-center md:w-[100%]  flex flex-col items-center ">
+      
+      
         <h2 className="text-4xl font-bold mb-12">Talent Stories</h2>
+        <div className="w-full  flex flex-row justify-start items-center gap-2 space-x-4 p-4 z-0">
+ 
         <Swiper
           direction="horizontal"
           slidesPerView={1}
@@ -105,6 +109,7 @@ const Stories = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
       </div>
     </section>
   )
