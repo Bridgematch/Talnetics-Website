@@ -26,3 +26,9 @@ import {atom} from 'recoil'
     key: 'previewComment',
     default:false,
   })
+
+
+  export const waitlistForm = atom({
+    key: 'waitlistForm',
+    default:false,
+  })

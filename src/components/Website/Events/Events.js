@@ -7,6 +7,8 @@ import Image from 'next/image';
 
 
 import styles from './events.module.css'
+import { useRecoilState } from 'recoil';
+import { waitlistForm } from '@/atom/contentState';
 
 
 
@@ -33,14 +35,19 @@ const events = [
 
   
 const Events = () => {
+
+  const [showWaitlist, setShowWaitlist] = useRecoilState(waitlistForm)
+
+
   return (
     <section id="events"  className="py-16 bg-gradient-to-r from-orange-500 from-0% via-gray-800 via-50% to-emerald-500 to-100% text-base-content">
     <div className="container-fluid mx-auto px-6 text-center">
       <h2 className="text-4xl font-bold mb-8 text-white">More with Events</h2>
-      <div className="mb-12 mt-3">
+      {/* <div className="mb-12 mt-3">
         <a href="/signup" className="btn bg-orange-600 px-12 border-none text-white hover:text-black">Get Started</a>
-      </div>
-
+      </div> */}
+          <div onClick={()=>setShowWaitlist(true)} className="btn border-none mb-8 bg-orange-600 px-12  text-white hover:text-black">Join the Waitlist</div>
+      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 md:px-6">
         {events.map((event, index) => (
           <motion.div

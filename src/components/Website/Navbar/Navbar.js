@@ -8,6 +8,9 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 
 import styles from './navbar.module.css'
+import { joinWaitlist } from "@/lib/api-actions"
+import { useRecoilState } from "recoil"
+import { waitlistForm } from "@/atom/contentState"
 
 
 
@@ -16,33 +19,13 @@ import styles from './navbar.module.css'
 
 
 const Navbar = () => {
-  const [isLoading, setIsLoading] = useState(false)
+  
   const [active, setActive] = useState('home')
+
+  const [showWaitlist, setShowWaitlist] = useRecoilState(waitlistForm)
   const router = useRouter();
-  console.log(router.passHref)
+  //console.log(router.passHref)
 
-
-  const submitInterest = async (event)=>{
-    event.preventDefault()
-    setIsLoading(true)
-    try {
-      const formData = new FormData(event.currentTarget);
-      const data ={
-        name: formData.get('name'),
-        email: formData.get('email')
-      };
-      
-     
-      console.log(data)
-  // submit the email to db
-
-      setIsLoading(false)
-    } catch (error) {
-      setIsLoading(false)
-      throw new Error(error)
-      
-    }
-  }
 
 
 
@@ -81,13 +64,16 @@ const Navbar = () => {
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52  bg-gray-800">
-      <li><Link passHref href="/" className={`text-white hover:bg-orange-500 ${router.pathname == '/' ? 'bg-orange-600':'bg-transparent'}`} >Home</Link></li>
-        <li><Link passHref href="/showcase" className={`text-white hover:bg-orange-500 ${router.pathname =="/showcase" ? 'bg-orange-600':'bg-transparent'}`} >Showcase</Link></li>
-        <li><Link passHref href="/discover" className={`text-white hover:bg-orange-500 ${router.pathname =="/discover" ? 'bg-orange-600':'bg-transparent'}`} >Discover</Link></li>
-        <li><Link passHref href="/events" className={`text-white hover:bg-orange-500 ${router.pathname =="/events" ? 'bg-orange-600':'bg-transparent'}`} >Events</Link></li>
-        <li><Link passHref href="/blog" className={`text-white hover:bg-orange-500 ${router.pathname =="/blog" ? 'bg-orange-600':'bg-transparent'}`} >Blog</Link></li>
-    
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-1 ml-0 z-[1] p-2 shadow rounded-box w-52  bg-gray-800 gap-4 pb-8 pt-8">
+      <a className="btn btn-ghost text-xl">
+    <Image src="/logo.png" alt="Logo" className="h-12"  width={48} height={52}/>
+    </a>
+      <li><Link passHref href="/" className={`text-white md:text-md hover:bg-orange-500 ${router.pathname == '/' ? 'bg-orange-600':'bg-transparent'}`} >Home</Link></li>
+        {/* <li><Link passHref href="/showcase" className={`text-white text-xl hover:bg-orange-500 ${router.pathname =="/showcase" ? 'bg-orange-600':'bg-transparent'}`} >Showcase</Link></li>
+        <li><Link passHref href="/discover" className={`text-white text-xl hover:bg-orange-500 ${router.pathname =="/discover" ? 'bg-orange-600':'bg-transparent'}`} >Discover</Link></li>
+        <li><Link passHref href="/events" className={`text-white text-xl hover:bg-orange-500 ${router.pathname =="/events" ? 'bg-orange-600':'bg-transparent'}`} >Events</Link></li>
+        <li><Link passHref href="/blog" className={`text-white text-xl hover:bg-orange-500 ${router.pathname =="/blog" ? 'bg-orange-600':'bg-transparent'}`} >Blog</Link></li>
+     */}
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">
@@ -95,45 +81,24 @@ const Navbar = () => {
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 flex gap-2">
-    <li><Link passHref href="/" className={`text-white hover:bg-orange-500 ${router.pathname == '/' ? 'bg-orange-600':'bg-transparent'}`} >Home</Link></li>
-        <li><Link passHref href="/showcase" className={`text-white hover:bg-orange-500 ${router.pathname =="/showcase" ? 'bg-orange-600':'bg-transparent'}`} >Showcase</Link></li>
+    <ul className="menu menu-horizontal px-1 flex gap-2 ">
+    <li><Link passHref href="/" className={`text-white  hover:bg-orange-500 ${router.pathname == '/' ? 'bg-orange-600':'bg-transparent'}`} >Home</Link></li>
+        {/* <li><Link passHref href="/showcase" className={`text-white hover:bg-orange-500 ${router.pathname =="/showcase" ? 'bg-orange-600':'bg-transparent'}`} >Showcase</Link></li>
         <li><Link passHref href="/discover" className={`text-white hover:bg-orange-500 ${router.pathname =="/discover" ? 'bg-orange-600':'bg-transparent'}`} >Discover</Link></li>
         <li><Link passHref href="/events" className={`text-white hover:bg-orange-500 ${router.pathname =="/events" ? 'bg-orange-600':'bg-transparent'}`} >Events</Link></li>
         <li><Link passHref href="/blog" className={`text-white hover:bg-orange-500 ${router.pathname =="/blog" ? 'bg-orange-600':'bg-transparent'}`} >Blog</Link></li>
-    
+     */}
     </ul>
   </div>
   {/* You can open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn ml-4" onClick={()=>document.getElementById('my_modal_4').showModal()}>Reserve a Spot</button>
-<dialog id="my_modal_4" className="modal">
-  <div className="modal-box w-[75%] md:w-[50%]  max-w-2xl">
-    <h3 className="font-bold text-lg">Interested? Join our waitlist</h3>
-    <p className="py-4">Enter your name and email address to be on the waitlist. Be the first to know and partner with us in driving this vision</p>
-    
-     {/* Insterested Form */}
-     <div>
-          <h3 className="text-xl font-bold mb-4">Early Adpoters</h3>
-          <p className="mb-4">** Be sure to get free access</p>
-          <form onSubmit={submitInterest}>
-            <input type="text" placeholder="Enter your fullname" name="name" className="input  w-full mb-4" />
-            <input type="email" placeholder="Enter your email" name="email" className="input  w-full mb-4" />
-            <button type="submit" className="btn bg-orange-600 w-full border-none text-white hover:text-black"> 
-              {isLoading ? <span className="loading loading-spinner loading-md"></span> : 'Submit Interest'}
-              </button>
-          </form>
-        </div>
-    <div className="modal-action">
-      <form method="dialog">
-        {/* if there is a button, it will close the modal */}
-        <button className="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
+{/* <button className="btn ml-4" onClick={()=>document.getElementById('my_modal_4').showModal()}>Reserve a Spot</button> */}
+<button className="btn ml-5 bg-orange-600 text-white border-none px-8 hover:text-black" onClick={()=> setShowWaitlist(true)}>Reserve a Spot</button>
+
   <div className="navbar-end gap-4 mx-6 ">
-    <Link href="/signup" className="hidden md:inline btn btn-sm bg-gray-800 text-white">Sign Up</Link>
-    <Link href="/login" className="btn btn-sm bg-orange-500 text-white">Sign In</Link>
+    {/* <Link href="/login" className="hidden md:flex btn btn-sm bg-gray-800 text-white">Sign Up</Link>
+    <Link href="/login" className="btn btn-sm bg-orange-500 text-white">Sign In</Link> */}
+    <div onClick={()=> setShowWaitlist(true)} className="hidden md:flex btn btn-sm bg-gray-800 text-white">Sign Up</div>
+    <div onClick={()=> setShowWaitlist(true)} className="btn btn-sm bg-orange-500 text-white">Sign In</div>
   </div>
 
 </div>

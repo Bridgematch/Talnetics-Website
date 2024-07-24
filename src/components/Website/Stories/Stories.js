@@ -6,11 +6,12 @@ import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
-import video1 from '/videos/video1.mp4'
-import video2 from '/videos/video2.mp4'
-import video3 from '/videos/video3.mp4'
-import video4 from '/videos/video4.mp4'
-import video5 from '/videos/video5.mp4'
+// import video1 from '/videos/video1.mp4'
+// import video2 from '/videos/video2.mp4'
+// import video3 from '/videos/video3.mp4'
+// import video4 from '/videos/video4.mp4'
+// import video5 from '/videos/video5.mp4'
+
 
 
 import 'swiper/css';
@@ -25,35 +26,35 @@ import Image from 'next/image';
 SwiperCore.use([Pagination, Mousewheel])
 const stories = [
     {
-      video: video1, // Replace with your video path
+      video: '/videos/video1.mp4', // Replace with your video path
       name: 'Sheyi Omagene',
       talents: 'Singer, Songwriter',
       location: 'New York, USA',
       image: '/images/users/user1.jpg',
     },
     {
-      video: video2, // Replace with your video path
+      video: '/videos/video2.mp4', // Replace with your video path
       name: 'Tyler Johnson',
       talents: 'Dancer, Choreographer',
       location: 'Los Angeles, USA',
       image: '/images/users/user2.jpg',
     },
     {
-      video: video3, // Replace with your video path
+      video: '/videos/video3.mp4', // Replace with your video path
       name: 'Megan Callier',
       talents: 'Painter, Sculptor',
       location: 'Paris, France',
       image: '/images/users/user3.jpg',
     },
     {
-      video: video4, // Replace with your video path
+      video: '/videos/video4.mp4', // Replace with your video path
       name: 'Steve Brad',
       talents: 'Actor, Director',
       location: 'London, UK',
       image: '/images/users/user4.jpg',
     },
     {
-      video: video5, // Replace with your video path
+      video: '/videos/video5.mp4', // Replace with your video path
       name: 'Ali Khan',
       talents: 'Musician, Composer',
       location: 'Winnipeg, Canada',
@@ -81,7 +82,7 @@ const Stories = () => {
               <div className="flex flex-col sm:flex-row gap-4 bg-base-100 shadow-xl rounded-lg p-8 w-full mx-auto md:w-[90%]  ">
                
                 <div className="md:w-1/2 sm:w-[100%] md:mr-5">
-                <Video
+                <video
                     controls
                     src={story.video}
                     className="rounded-lg mb-0 ml-0 pr-0 pb-0 w-full h-full mt-0"
@@ -94,9 +95,9 @@ const Stories = () => {
                 <p className=" mb-2">{story.talents}</p>
                 <p className=" mb-4">{story.location}</p>
                 <div className="flex md:flex-row flex-col gap-2  justify-center text-center">
-                  <Link href="/signup" className="btn btn-sm px-4  btn-primary">Support</Link>
-                  <Link href="/signup" className="btn btn-sm px-6  btn-secondary">Hire</Link>
-                  <Link href="/signup" className="btn btn-sm px-4  btn-accent">Collaborate</Link>
+                  <Link href="/#" className="btn btn-sm px-4  btn-primary">Support</Link>
+                  <Link href="/#" className="btn btn-sm px-6  btn-secondary">Hire</Link>
+                  <Link href="/#" className="btn btn-sm px-4  btn-accent">Collaborate</Link>
                 </div>
                 </div>
                 

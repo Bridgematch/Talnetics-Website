@@ -6,10 +6,16 @@ import Link from 'next/link';
 
 
 import styles from './solutions.module.css'
+import { useRecoilState } from 'recoil';
+import { waitlistForm } from '@/atom/contentState';
 
 
 
 const Solutions = () => {
+
+  const [showWaitlist, setShowWaitlist] = useRecoilState(waitlistForm)
+
+
   return (
     <section id="solutions" className="py-16 bg-base-200 text-base-content">
       <div className="container-fluid mx-auto flex flex-col md:flex-row items-center justify-center px-0 space-y-8 md:space-y-0 md:space-x-8">
@@ -41,8 +47,8 @@ const Solutions = () => {
           <p className=" mb-6 lg:w-[65%] md:w-[65%]">
             With Talnetics, talented users can upload and share their content which goes through our AI-powered promotion pipeline to improve visibility and promotion.
           </p>
-          <Link href="/signup" className="btn bg-orange-600 px-12  text-white hover:text-black">Try It Out</Link>
-         
+          {/* <Link href="/signup" className="btn bg-orange-600 px-12  text-white hover:text-black">Try It Out</Link> */}
+          <div onClick={()=>setShowWaitlist(true)} className="btn bg-orange-600 px-12  text-white hover:text-black">Join the Waitlist</div>
         </motion.div>
       </div>
     </section>

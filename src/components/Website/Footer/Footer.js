@@ -32,11 +32,11 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Core Links</h3>
           <ul className="space-y-2">
-            <li><Link href="/home" className="hover:underline">Home</Link></li>
-            <li><Link href="/showcase" className="hover:underline">Showcase</Link></li>
-            <li><Link href="/discover" className="hover:underline">Discover</Link></li>
-            <li><Link href="/events" className="hover:underline">Events</Link></li>
-            <li><Link href="/blog" className="hover:underline">Blog</Link></li>
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/" className="hover:underline">Showcase</Link></li>
+            <li><Link href="/" className="hover:underline">Discover</Link></li>
+            <li><Link href="/" className="hover:underline">Events</Link></li>
+            <li><Link href="/" className="hover:underline">Blog</Link></li>
           </ul>
         </div>
         
@@ -44,11 +44,11 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Sub Links</h3>
           <ul className="space-y-2">
-            <li><Link href="/promotion" className="hover:underline">Promotion</Link></li>
-            <li><Link href="/solutions" className="hover:underline">Solutions</Link></li>
-            <li><Link href="/engage" className="hover:underline">Engage</Link></li>
-            <li><Link href="/partners" className="hover:underline">Partners</Link></li>
-            <li><Link href="/stories" className="hover:underline">Stories</Link></li>
+            <li><Link href="/" className="hover:underline">Promotion</Link></li>
+            <li><Link href="/" className="hover:underline">Solutions</Link></li>
+            <li><Link href="/" className="hover:underline">Engage</Link></li>
+            <li><Link href="/" className="hover:underline">Partners</Link></li>
+            <li><Link href="/" className="hover:underline">Stories</Link></li>
           </ul>
         </div>
         

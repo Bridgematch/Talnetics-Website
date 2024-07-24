@@ -73,7 +73,7 @@ position: relative;
    
     min-width: 100%; 
     max-height: 100vh; 
-    
+    background-color: blue;
     top:0;
     left:0;
     opacity: 50%;
