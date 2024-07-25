@@ -94,12 +94,13 @@ const Navbar = () => {
 {/* <button className="btn ml-4" onClick={()=>document.getElementById('my_modal_4').showModal()}>Reserve a Spot</button> */}
 <button className="btn ml-5 bg-orange-600 text-white border-none px-8 hover:text-black" onClick={()=> setShowWaitlist(true)}>Reserve a Spot</button>
 
-  <div className="navbar-end gap-4 mx-6 ">
+  {/* <div className="navbar-end gap-4 mx-6 ">
     {/* <Link href="/login" className="hidden md:flex btn btn-sm bg-gray-800 text-white">Sign Up</Link>
-    <Link href="/login" className="btn btn-sm bg-orange-500 text-white">Sign In</Link> */}
+    <Link href="/login" className="btn btn-sm bg-orange-500 text-white">Sign In</Link> 
     <div onClick={()=> setShowWaitlist(true)} className="hidden md:flex btn btn-sm bg-gray-800 text-white">Sign Up</div>
-    <div onClick={()=> setShowWaitlist(true)} className="btn btn-sm bg-orange-500 text-white">Sign In</div>
+    <div onClick={()=> setShowWaitlist(true)} className="hidden md:flex btn btn-sm bg-orange-500 text-white">Sign In</div>
   </div>
+   */}
 
 </div>
 
